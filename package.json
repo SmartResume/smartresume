@@ -4,7 +4,8 @@
   "description": "Smart resume is a tool for quick resume creation",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "webpack -d --watch=true"
   },
   "repository": {
     "type": "git",
@@ -18,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/SmartResume/smartresume/issues"
   },
-  "homepage": "https://github.com/SmartResume/smartresume#readme"
+  "homepage": "https://github.com/SmartResume/smartresume#readme",
+  "devDependencies": {
+    "webpack": "^3.8.1"
+  }
 }
