@@ -40,7 +40,7 @@ export default class Applicant{
     set postalCode(postalCode){
         this._postalCode = postalCode;
     }
-    get email(){
+    getEmail(){
         return this._email;
     }
     set email(email){

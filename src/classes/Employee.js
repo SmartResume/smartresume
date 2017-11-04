@@ -1,5 +1,5 @@
-export default class Employee{
-    constructor(companyName, personnelFirstName, personnelLastName, personnelPhoneNumber, personnelEmail, streetAddres, city, postalCode){
+export default class Employee {
+    constructor(companyName, personnelFirstName, personnelLastName, personnelPhoneNumber, personnelEmail, streetAddres, city, postalCode) {
         this._companyName = companyName;
         this._personnelFirstName = personnelFirstName;
         this._personnelLastName = personnelLastName;
@@ -9,6 +9,8 @@ export default class Employee{
         this._city = city;
         this._postalCode = postalCode;
     }
+
+
 }
 /**
  * Employee: (companyName, personnelFirstName, personnelLastName, streetAddress, city, postalCode ...) 
