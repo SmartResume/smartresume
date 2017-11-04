@@ -1,4 +1,5 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin')
+const ExtractTextPlugin = require("extract-text-webpack-plugin");
 const path = require('path')
 
 module.exports = {
@@ -7,10 +8,28 @@ module.exports = {
     filename: 'app.bundle.js',
     path: path.resolve('./dist')
   },
+  module: {
+    rules: [
+      {
+        test: /\.css$/,
+        use: ExtractTextPlugin.extract({
+          fallback: "style-loader",
+          use: "css-loader"
+        })
+      }
+    ]
+  },
   plugins: [
     new HtmlWebpackPlugin({
       title: 'SmartResume',
+      minify: {
+        collapseWhitespace: true
+      },
+      hash: true,
       template: './src/template.html'
+    }),
+    new ExtractTextPlugin({
+      filename: "app.css",
     })
   ]
 }
