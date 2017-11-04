@@ -1,0 +1,22 @@
+{
+  "name": "smartresume",
+  "version": "1.0.0",
+  "description": "Smart resume is a tool for quick resume creation",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SmartResume/smartresume.git"
+  },
+  "keywords": [
+    "resume"
+  ],
+  "author": "Mikko Karaiste, Eelis Piirilä",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SmartResume/smartresume/issues"
+  },
+  "homepage": "https://github.com/SmartResume/smartresume#readme"
+}
