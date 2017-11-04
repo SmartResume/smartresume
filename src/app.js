@@ -7,3 +7,5 @@ console.log(user.email);
 /**
 * Applicant: (firstName, lastName, streetAddress, city, postalCode, email, phoneNumber, praiseWords, skillSet)
 */
+const style = require('./app.css')
+console.log('Hello from app.js')
